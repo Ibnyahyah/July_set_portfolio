@@ -165,3 +165,60 @@ footer .row>div {
 footer a {
     color: #ffffff;
 }
+
+/* Tablet */
+@media screen and (max-width:768px) {
+    section {
+        height: auto;
+        padding: 20px 0px;
+    }
+
+    .top-section .row>div {
+        width: 60%;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .image-container {
+        height: auto;
+    }
+
+    .image-container img {
+        object-fit: contain;
+    }
+
+    .service-section {
+        padding: 20px 20px;
+    }
+}
+
+/* mobile phone */
+@media screen and (max-width:576px) {
+    .top-section .row {
+        flex-direction: column-reverse;
+    }
+
+    .top-section .row>div {
+        width: 100%;
+    }
+
+    form.card-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    footer .row {
+        align-items: center;
+    }
+}
+
+/* mobile phone */
+@media screen and (max-width:320px) {
+    footer .row {
+        align-items: baseline;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
